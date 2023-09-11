@@ -224,4 +224,106 @@ body {
   width: 0%;
   transition: width 0.1s linear;
 }
-  
+
+/* Media Queries for Responsive Design */
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+  .music-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Change to a vertical layout */
+    align-items: center;
+  }
+
+  .img-container {
+    margin-bottom: 10px; /* Reduce spacing between image and controls */
+    margin-left: -200px; /* Shift the image 200 pixels to the left */
+    position: relative; /* Add position relative to .img-container */
+  }
+
+  .img-container::after {
+    content: '';
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%); /* Center the white circle both horizontally and vertically */
+    width: 20px;
+    height: 20px;
+  }
+
+  .action-btn,
+  .volume-btn,
+  .shuffle-btn,
+  .repeat-btn {
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px; /* Add margin to separate buttons */
+  }
+
+  /* turn off all hover button */
+  .action-btn:hover,
+  .volume-btn:hover,
+  .shuffle-btn:hover,
+  .repeat-btn:hover {
+    background-color: #fff;
+    border: 0;
+    color: #797079;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px;
+    margin: 5px;
+  }
+
+  .action-btn.action-btn-big {
+    font-size: 20px;
+  }
+
+  .duration-container {
+    padding: 10px 20px;
+    width: 100%; /* Ensure the duration container takes full width */
+  }
+
+  .music-info {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px 15px 0 0;
+    position: static; /* Reset position for info box */
+    width: 100%; /* Take full width */
+    opacity: 1;
+    transform: translateY(0%);
+    text-align: center; /* Center-align text */
+  }
+
+  .music-info h4 {
+    margin: 10px 0; /* Add margin to the song title */
+  }
+
+  .progress-container {
+    margin: 5px 0; /* Reduce margin for progress container */
+  }
+}
+
+/* Larger screens like laptops and desktops */
+@media screen and (min-width: 769px) {
+  .music-container {
+    padding: 30px; /* Increase padding to provide more spacing */
+  }
+
+  .action-btn,
+  .volume-btn,
+  .shuffle-btn,
+  .repeat-btn {
+    font-size: 20px; /* Increase font size for larger screens */
+    padding: 10px;
+    margin: 0 10px; /* Increase margin for larger screens */
+  }
+
+  .duration-container {
+    padding: 20px 30px;
+  }
+
+  .progress-container {
+    margin: 10px 0; /* Increase margin for progress container */
+  }
+}
