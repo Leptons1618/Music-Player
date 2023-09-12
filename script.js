@@ -229,7 +229,7 @@ repeatBtn.addEventListener('click', function (e) {
     repeatBtn.innerHTML = '<i class="fas fa-redo"></i>';
   } else {
     audio.loop = true;
-    repeatBtn.innerHTML = '<i class="fas fa-redo-alt fa-flip-horizontal"></i>';
+    repeatBtn.innerHTML = '<i class="fas fa-redo-alt fa-rotate-90"></i>';
   }
 });
 

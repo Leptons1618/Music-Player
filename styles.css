@@ -158,7 +158,7 @@ body {
 }
 
 .action-btn.action-btn-big {
-  color: #96903a;
+  color: #96803a;
   font-size: 30px;
 }
 
@@ -221,20 +221,24 @@ body {
   transition: width 0.1s linear;
 }
 
+.active {
+  color: #96903a;
+}
+
 /* Media Queries for Responsive Design */
 
 /* Small screens */
 @media screen and (max-width: 768px) {
   .music-container {
-    padding: 20px; /* Adjust padding for smaller screens */
-    flex-direction: column; /* Change to a vertical layout */
+    padding: 20px;
+    flex-direction: column;
     align-items: center;
   }
 
   .img-container {
-    margin-bottom: 10px; /* Reduce spacing between image and controls */
-    margin-left: -200px; /* Shift the image 200 pixels to the left */
-    position: relative; /* Add position relative to .img-container */
+    margin-bottom: 10px;
+    margin-left: -200px;
+    position: relative;
   }
 
   .img-container::after {
@@ -244,7 +248,7 @@ body {
     position: absolute;
     bottom: 50%;
     left: 50%;
-    transform: translate(-50%, -200%); /* Center the white circle both horizontally and vertically */
+    transform: translate(-50%, -200%);
     width: 20px;
     height: 20px;
   }
@@ -255,7 +259,7 @@ body {
   .repeat-btn {
     font-size: 16px;
     padding: 8px;
-    margin: 5px; /* Add margin to separate buttons */
+    margin: 5px;
   }
 
   /* turn off all hover button */
@@ -278,41 +282,41 @@ body {
 
   .duration-container {
     padding: 10px 20px;
-    width: 100%; /* Ensure the duration container takes full width */
+    width: 100%;
   }
 
   .music-info {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px 15px 0 0;
-    position: static; /* Reset position for info box */
-    width: 100%; /* Take full width */
+    position: static;
+    width: 100%;
     opacity: 1;
     transform: translateY(0%);
-    text-align: center; /* Center-align text */
+    text-align: center;
   }
 
   .music-info h4 {
-    margin: 10px 0; /* Add margin to the song title */
+    margin: 10px 0; 
   }
 
   .progress-container {
-    margin: 5px 0; /* Reduce margin for progress container */
+    margin: 5px 0; 
   }
 }
 
 /* Larger screens like laptops and desktops */
 @media screen and (min-width: 769px) {
   .music-container {
-    padding: 30px; /* Increase padding to provide more spacing */
+    padding: 30px;
   }
 
   .action-btn,
   .volume-btn,
   .shuffle-btn,
   .repeat-btn {
-    font-size: 20px; /* Increase font size for larger screens */
+    font-size: 20px;
     padding: 10px;
-    margin: 0 10px; /* Increase margin for larger screens */
+    margin: 0 10px;
   }
 
   .duration-container {
@@ -320,6 +324,6 @@ body {
   }
 
   .progress-container {
-    margin: 10px 0; /* Increase margin for progress container */
+    margin: 10px 0;
   }
 }
