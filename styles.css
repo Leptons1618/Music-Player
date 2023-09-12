@@ -230,7 +230,7 @@ body {
 /* Small screens */
 @media screen and (max-width: 768px) {
   .music-container {
-    padding: 20px;
+    padding: 10px;
     flex-direction: column;
     align-items: center;
   }
